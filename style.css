@@ -476,7 +476,7 @@ body.dark-theme {
 
 .missao{
     height: 90vh;
-    background-color: #000;
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -484,7 +484,7 @@ body.dark-theme {
 
 }
 .text-missao {
-    color: #ccc;
+    color: black;
     text-align: center;
     padding: 20px 100px;
 
@@ -498,7 +498,7 @@ body.dark-theme {
 
 .missao p {
     font-weight:bold;
-    color: #c8c7c7;
+    color: black;
 }
 
 .missao .txt-missao .oi1,

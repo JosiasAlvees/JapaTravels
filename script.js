@@ -92,6 +92,9 @@ ScrollReveal().reveal('.text-h', { delay: 200, duration: 1000, origin: 'bottom',
 ScrollReveal().reveal('.oi1', { delay: 400, duration: 1000, origin: 'bottom', distance: '50px' });
 ScrollReveal().reveal('.oi2', { delay: 600, duration: 1000, origin: 'bottom', distance: '50px' });
 ScrollReveal().reveal('.oi3', { delay: 800, duration: 1000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('.containerHospedagem', {duration: 1000,  origin: 'bottom', distance: '50px',
+delay: 800 });
+ScrollReveal().reveal('.faq-container', { delay: 800, duration: 1000, origin: 'bottom', distance: '50px' });
 
 //banner
 //lazy loading
@@ -100,6 +103,24 @@ document.addEventListener("scroll", function() {
   var posicao = document.querySelector(".banner").getBoundingClientRect().top;
   if (posicao - alturaTela <= 0) {
     document.querySelector(".banner").classList.add("mostrando");
+  }
+});
+
+//Section depoimentos
+document.addEventListener('scroll', function () {
+  var alturaTela = window.innerHeight;
+  var posicao = document.querySelector(".containerHospedagem").getBoundingClientRect().top;
+  if (posicao - alturaTela <= 0) {
+    document.querySelector(".containerHospedagem").classList.add("mostrando");
+  }
+});
+
+//Section FAQ
+document.addEventListener('scroll', function () {
+  var alturaTela = window.innerHeight;
+  var posicao = document.querySelector(".faq-container").getBoundingClientRect().top;
+  if (posicao - alturaTela <= 0) {
+    document.querySelector(".faq-container").classList.add("mostrando");
   }
 });
 
