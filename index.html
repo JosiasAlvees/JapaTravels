@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
+    
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="logoBranco.png" type="image/x-icon" />
+    <title>JapaTravels</title>
+</head>
+
+<body>
+     
+    <!-- MENU -->
+    <header>
+        <nav class="navigation">
+            <img class="logo-img" src="logoPreto.png" alt="Logo JapaTravels" ><a href="http://127.0.0.1:5501/index.html" class="logo">J<span>apa</span>T<span>ra</span>v<span>els</span></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#perguntas">Dúvidas</a></li>
+
+                <!--Botão de mudar tema light pro dark-->
+                <!--<li><button id="theme-toggle" onclick="mudarIcon()"><i class="bx bx-sun" id="icon-theme"></i></button></li>-->
+                
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+
+        <a href="https://wa.me/553574006707?text=Quero%20fazer%20uma%20cota%C3%A7%C3%A3o!" class="float"
+            target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+
+        <section id="vis-modal" class="modal">
+            <div class="content-modal">
+                <div class="header-modal">
+                    <h3 class="title-modal">Sobre Nós</h3>
+                    <div class="rodape-modal">
+                        <button class="btn-outline-success" onclick="closedModal('vis-modal')">Fechar</button>
+                    </div>
+                </div>
+    
+                <div class="body-modal">
+                    <p class="p-modal">
+                        <b>TeuWebSite</b> é uma empresa criada por quatro Desenvolvedores e um Mentor, que buscam promover o acesso a um site para todos,independentemente de sua renda ou status socioeconômico.
+                    </p>
+                    <p class="p-modal">
+                        Desenvolvemos sites web, e oferecemos serviços de hospedagens,
+                        e futuramente também desenvolveremos aplicativos mobile. Utilizaremos as melhores tecnologias para o desenvolvimento da sua página web.
+                    </p>
+                    <p class="p-modal">
+                        Queremos fornecer uma plataforma que seja acessível e fácil de usar para que todos possam se conectar com as informações e serviços que precisam para crescer e prosperar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- INICIO -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <br><br>
+
+                <h4 class="text-h4">Bem Vindo ao Mundo das Milhas</h4>
+                <h1 class="text-h1">Viaje sem preocupações</h1>
+                <p class="text-b"><b>A minha Agência de Viagens, JapaTravels 🇯🇵, foi criada para descomplicar esse momento tão especial que é viaja</b></p>
+                <button class="botao" onclick="finalizarPedido()">Mais informações</button>
+            </div>
+            <div class="home-img">
+                <img src="logoPreto.png" alt="Telas">
+            </div>
+        </section>
+
+        <!-- cuidamos do seu site -->
+        <section class="about">
+            <div class="about_img">
+                <img src="cuidados.png" alt="Telas">
+            </div>
+            <div class="home-text">
+                <h1 class="text-h1">Nós cuidamos da parte burocrática enquanto você aproveita a viagem</h1><br>
+                <h1 class="text-1-1">Venha conhecer nosso trabalho</h1><br>
+                <button class="botao" onclick="finalizarPedido()">Saiba Mais</button>
+            </div>
+        </section>
+
+        <!-- INCLUSO -->
+        
+        <section class="incluso">
+            <h1 class="text-h">O QUE OFERECEMOS</h1>
+                <div class="plano">
+                    <div class="oi1">
+                        <img id="icones" src="taxa-de-juro.png" alt="Ícone de hospedagem" />
+                        <h4><span id="cor">+ </span> ECONOMIA</h4><br>
+                        <p>
+                            Nossas emissões de passagens aéreas são feitas com milhas e por esse motivo conseguimos até 50% de desconto se comprando as tarifas pagas em dinheiro. A emissão é feita imediatamente e em poucos minutos o seu localizador está em mãos
+                        </p>
+                    </div>
+                    <div class="oi2">
+                        <img src="modelo-3d.png" alt="Ícone de e-mail">
+                        <h4><span id="cor">+</span> PRATICIDADEIA</h4><br>
+                        <p>
+                            Além de encontrarmos as melhores passagens aéreas para vocês, nós cuidamos de todos os processos burocráticos da sua viagem como: check-in, marcação de assento, despacho de bagagens, remarcação de voos, cancelamentos, tudo que envolva seu voo. Tudo basicamente só irá se preocupar em fazer a mala e embarcar!
+                        </p>
+                    </div>
+                    <div class="oi3">
+                        <img src="escudo.png" alt="Ícone de site responsivo">
+                        <h4><span id="cor">+ </span>SEGURANÇA</h4><br>
+                        <p>
+                            Seguimos rigorosamente o regurlamento das Cias aéreas e do Código de defesa do Consumidor. Além de nosso atendimento pré e pós venda que é inexistente quando você compra passagem por conta própria.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- BANNER -->
+        <section class="banner">
+            <h3 class="banner-h3">Mundo das Milhas</h3>
+        </section>
+
+        <!-- HOSPEDAGEM -->
+           <section class="containerHospedagem">
+            <div class="testimonial mySwiper">
+                <div class="testi-contente swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="avatar-3.png" alt="" class="image">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis earum provident et expedita fuga esse ratione eligendi nemo incidunt doloribus quia a impedit ad, enim ducimus officia facilis culpa.
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="dentails">
+                            <span class="name">
+                                Avatar1
+                            </span>
+                            <span class="job">
+                                Cliente
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+           </section>
+        
+
+        <!-- Veja como podemos te ajudar -->
+        <section class="missao">
+            <h1 class="text-missao">Veja como podemos te ajudar</h1>
+                <div class="txt-missao">
+                    <div class="oi1">
+                        <img class="img-missao" src="atendente.png" alt="Ícone atendente" /><br><br>
+                        <p>
+                            Você terá um atendimento pré e pós venda exclusivo, só quem ja passou por perrengues em suas viagens sabe o quanto isso é importante!
+                        </p>
+                    </div>
+                    <div class="oi2">
+                        <img class="img-missao"  src="cofrinho-3d.png" alt="Ícone cofrinho"><br><br>
+                        <p>
+                            Garantimos o melhor preço da internet na compra de suas passagens aéreas; <br>
+                            Cobrimos a oferta das CIAS aéreas nem que a diferença saia do nosso bolso!<br>
+                            A emissão é feita na hora e em poucos segundos você já tem o seu localizador em mãos.  
+
+                        </p>
+                    </div>
+                    <div class="oi3">
+                        <img class="img-missao" src="casa-3d.png" alt="Ícone casa"><br><br>
+                        <p>
+                            Junto as passagens, fazemos uma assessoria gratuita para reserva em hospedagens, aluguel de carros e reserva de bilhetes; <br>
+                            Sugestão de roteiros também estão inclusos nos nossos serviços!
+                        </p>
+                    </div>>
+                </div>
+        </section>
+
+        <!-- <section class="incluso">
+            <div class="todas-div">
+                <div class="plano">
+                    <div class="oi1">
+                        <img src="src/img/" alt="Ícone de hospedagem"/>
+                        <h2>BRONZE</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                      <div class="oi2">
+                        <img src="src/img/" alt="Ícone de e-mail">
+                        <h2>PRATA</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                      <div class="oi3">
+                        <img src="src/img/um.png" alt="Ícone de site responsivo"/>
+                        <br><br>
+                        <h2>OURO</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+                </div>
+            </div>
+        </section><hr> -->
+
+
+        <!-- PERGUNTAS -->
+        <section class="faq-container" id="perguntas">
+            <h3 class="faq-titulo">Perguntas frequentes</h3>
+            <div class="faq">
+                <div class="pergunta">
+                    <div class="pergunta1">
+                        <h3>Como são feitas as emissões da Agência?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta1">
+                        <p class="p1">
+                            Nossas emissões são feitas com milhas aéreas na maioria das vezes. Compramos milhas a baixo custo e emitimos passagens para nossos clientes.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta2">
+                        <h3>Tem diferença a passagem comprada no site da cia aérea para a comprada com milhas?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta2">
+                        <p class="p1">
+                            Não tem diferença nenhuma. O bilhete é o mesmo.
+                        </p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta3">
+                        <h3>Vocês emitem somente passagem nacionais?</h3>  
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <p class="resposta3">
+                        Não. Te levamos para o mundo todo! Sem exceções. 
+                    </p><br>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta4">
+                        <h3 >Quanto tempo demora para fechar a compra de uma passagem?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta4">
+                        <p class="p1">
+                            Você recebe seu bilhete imediatamente.
+                        </p><br>
+                        
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta5">
+                        <h3>Quais as formas de pagamento?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta5">
+                        <p class="p">
+                            Parcelamos em até 10x sem juros via link de pagamento e PIX, com aquele descontinho.
+                        </p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta6">
+                        <h3>Estou inseguro. Como funciona o trabalho de vocês?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta6">
+                        <p class="p1">
+                            Primeiramente fazemos a cotação da sua passagem. Se você gostar, a emissão é feita. Com o bilhete em mãos, você realiza o pagamento!
+                        </p><br>
+                    </div>
+                </div>
+            <button class="botao" onclick="finalizarPedido()">Quero fazer uma cotação!</button>
+        </section>
+
+
+          
+
+          <footer>
+            <div class="footer-content">
+                <div>
+                    <h3><span class="T"></span>Japa<span class="W">Travels</span></h3>
+                    <p>Viaje com economia, segurança e tranquilidade!</p>
+                </div>
+                <div class="foolder-social">
+                    <ul class="socials">
+                        <li><a href="#"><img class="whatsapp" src="whatsapp.png" alt="whatsapp"></a></li>
+                        <li><a href="#"><img class="Linkedin" src="linkedin.png" alt="Linkedin"></a></li>
+                        <li><a href="#"><img class="Instagram" src="instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img class="Facebook" src="facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img class="Facebook" src="telegram.png" alt="telegram"></a></li>
+                    </ul>
+                </div>
+                <p class="rodape">Copyright &copy;2023 JapaTravels</p>
+            </div>
+        </footer>
+    </main>
+    <!-- biblioteca javaScript para usar scrollreveal -->
+
+    <!--Swiper-->
+    <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
