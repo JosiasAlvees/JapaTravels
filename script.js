@@ -55,8 +55,8 @@ function closedModal(fecharModal) {
 function finalizarPedido() {
   let mensagem;
   mensagem =
-    "Olá gostaria de saber mais sobre milhas? ";
-  window.open("https://www.instagram.com/japatravels_/?igshid=MzRlODBiNWFlZA%3D%3D" + mensagem);
+    " ";
+  window.open("https://wa.me/553574006707?text=Quero%20fazer%20uma%20cota%C3%A7%C3%A3o!" + mensagem);
 }
 
 //Home 
